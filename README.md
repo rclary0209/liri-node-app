@@ -1,7 +1,9 @@
 This app serves as an entertainment guru. It allows the user to search various API's for information on movies, live performances, and music. 
 
 It gathers information from Spotify such as a song's name, link to it on Spotify, the album it's from, and if the user input is blank it will default to "The Sign" by Ace of Base.
-This is demonstrated in the spotify-this.png file. 
+This is demonstrated in the 
+[Spotify-this Image](spotify-this.png)
+
 
 
 It will also access concert info from the bands in my town API to find information about your favorite artists such as when they are performing, the venue name, and location. 
