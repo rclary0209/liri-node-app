@@ -1,7 +1,7 @@
 This app is your entertainment information Guru. You can search Spotify, Bands in Town and OMDB for information on movies, live performances, and music. The value of this app is that it pulls data from all three of these API from just one app!
 
 If you type: node liri.js spotify-this (and enter a song name), Liri will gather the data from Spotify and output the song's name, link to it on Spotify, and the name of the album it's from. If the user input is blank and looks like this: node liri.js spotify this, it will default to "The Sign" by Ace of Base.
-Visual examples can be accessed here [Spotify-this Image](spotify-this.png).
+Visual examples can be accessed here, [Spotify-this Image](spotify-this.png).
 
 
 
