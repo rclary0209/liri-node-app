@@ -10,5 +10,5 @@ Liri also accesses concert information from the bands in my town API. If you typ
 
 Want information on your favorite movie? Liri pulls movie data from the IMDB database. For any movie you input (node liri.js (insert movie name here)), Liri will give you the: title of the movie, year it was released, rating, the Country where it was produced, its' language, plot, and cast information. If you forget to input a movie, the data defaults to "Mr. Nobody." Visual exemplification can be found in the [Movie-this Image](movie-this.png). 
 
-And finally, if you type node liri.js random-text, the radom text from the random.txt file is pulled split and looped so that the Liri fuction can be called and data pulled from the random text in the file. See attached,[Random-text Image](random-text.png).
+And finally, if you type node liri.js random-text, the radom text from the random.txt file is pulled split and looped so that the Liri fuction can be called and data pulled from the random text in the file. See attached, [Random-text Image](random-text.png).
 
