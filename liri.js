@@ -2,6 +2,7 @@ require("dotenv").config();
 var keys = require("./keys.js");
 var axios = require("axios");
 var moment = require('moment');
+var fs = require("fs")
 moment().format();
 
 var Spotify = require("node-spotify-api");
@@ -24,9 +25,13 @@ function CallLiri(com, term){
         case "concert-this":
             searchConcert(term);
             break;
+        
+        case "random-text":
+          doWhatItSays(term);
+            break;
 
         default:
-            console.log("Please type a valid command");
+            console.log("Please type a valid command.");
             break;
     }
 }
@@ -51,7 +56,6 @@ function searchConcert(term){
       })
   }
 
-// var movieName = ""
 function searchOMDB(term){
     axios.get("http://www.omdbapi.com/?t=" + (term ? term : "Mr Nobody") + "&y=&plot=short&apikey=trilogy").then(
         function(response) {
@@ -65,3 +69,22 @@ function searchOMDB(term){
             "Actors in movie: " + response.data.Actors])
      })
 }
+
+function doWhatItSays(term){
+  fs.readFile("random.txt", "utf-8", function (err, data) {
+    data = data.split(",")
+
+    //console.log(data)
+
+    for(let i = 0; i < data.length; i++){
+
+      if( i % 2 === 0){
+        //console.log(data[i] + " " + data[i + 1]);
+        CallLiri(data[i], data[i+1]);
+      }
+
+    }
+   });
+}
+
+
