@@ -5,8 +5,10 @@ Visual examples can be accessed here, [Spotify-this Image](spotify-this.png).
 
 
 
-Liri will also access concert information from the bands in my town API. If you type node liri.js concert-this (band name here). Liri will pull information on your favorite artists such as when they are performing next, the venue name, and its' location. Visual examples found here, [Concert-this Image](concert-this.png).
+Liri also accesses concert information from the bands in my town API. If you type node liri.js concert-this (band name here). Liri will pull information on your favorite artists such as when they are performing next, the venue name, and its' location. Visual examples found here, [Concert-this Image](concert-this.png).
  
 
-And finally, Liri pulls movie information from the IMDB database. For any movie you input (node liri.js (insert movie name here)), Liri will give you the: title of the movie, year it was released, rating, the Country where it was produced, its' language, plot, and cast information. If you forget to input a movie, the data defaults to "Mr. Nobody." Visual exemplification can be found in the [Movie-this Image](movie-this.png). 
+Want information on your favorite movie? Liri pulls movie data from the IMDB database. For any movie you input (node liri.js (insert movie name here)), Liri will give you the: title of the movie, year it was released, rating, the Country where it was produced, its' language, plot, and cast information. If you forget to input a movie, the data defaults to "Mr. Nobody." Visual exemplification can be found in the [Movie-this Image](movie-this.png). 
+
+And finally, if you type node liri.js random-text, the radom text from the random.txt file is pulled split and looped so that the Liri fuction can be called and data pulled from the random text in the file. See attached file. [Concert-this Image](concert-this.png).
 
